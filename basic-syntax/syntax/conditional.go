@@ -1,10 +1,11 @@
-package main
+package syntax
 
 import (
 	"fmt"
 )
 
-func main() {
+// SimpleConditional example.
+func SimpleConditional() {
 	num := 99
 	if num <= 50 {
 		fmt.Println("number is less than or equal to 50")

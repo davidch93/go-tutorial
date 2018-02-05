@@ -1,10 +1,11 @@
-package main
+package syntax
 
 import (
 	"fmt"
 )
 
-func main() {
+// SimpleSwitchCase example.
+func SimpleSwitchCase() {
 	switch finger := 8; finger {
 	case 1:
 		fmt.Println("Thumb")
@@ -19,8 +20,10 @@ func main() {
 	default:
 		fmt.Println("incorrect finger number")
 	}
+}
 
-	//multiple expressions in case
+// MultipleExpressionInCase example.
+func MultipleExpressionInCase() {
 	letter := "i"
 	switch letter {
 	case "a", "e", "i", "o", "u":
@@ -28,7 +31,10 @@ func main() {
 	default:
 		fmt.Println("not a vowel")
 	}
+}
 
+// ConditionalExpressionInCase example.
+func ConditionalExpressionInCase() {
 	num := 75
 	switch {
 	case num >= 0 && num <= 50:
@@ -38,7 +44,10 @@ func main() {
 	case num >= 101:
 		fmt.Println("num is greater than 100")
 	}
+}
 
+// FallthroughStatement example.
+func FallthroughStatement() {
 	/*
 	 * A fallthrough statement is used to transfer control to the first statement of
 	 * the case that is present immediately after the case which has been executed.
