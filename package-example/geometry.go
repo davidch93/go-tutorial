@@ -3,7 +3,8 @@ package main
 import (
 	"fmt"
 	"log"
-	"package-example/rectangle"
+
+	"github.com/davidch93/go-tutorial/package-example/rectangle"
 )
 
 var rectLen, rectWidth float64 = 6, 7

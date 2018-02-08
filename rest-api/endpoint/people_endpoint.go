@@ -2,9 +2,10 @@ package endpoint
 
 import (
 	"encoding/json"
-	"go-tutorial/rest-api/entity"
-	"go-tutorial/rest-api/service"
 	"net/http"
+
+	"github.com/davidch93/go-tutorial/rest-api/entity"
+	"github.com/davidch93/go-tutorial/rest-api/service"
 
 	"github.com/gorilla/mux"
 )
@@ -22,6 +23,11 @@ func GetPerson(w http.ResponseWriter, r *http.Request) {
 	var person = service.GetPerson(params["id"])
 	w.Header().Add("Content-Type", "application/json")
 	json.NewEncoder(w).Encode(person)
+}
+
+// FindPeople is an API used to find person by firstname and lastname.
+func FindPeople(w http.ResponseWriter, r *http.Request) {
+
 }
 
 // CreatePerson is an API used to create new person.

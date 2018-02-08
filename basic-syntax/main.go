@@ -1,8 +1,9 @@
 package main
 
 import (
-	"basic-syntax/syntax"
 	"fmt"
+
+	"github.com/davidch93/go-tutorial/basic-syntax/syntax"
 )
 
 func main() {

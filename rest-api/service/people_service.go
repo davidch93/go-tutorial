@@ -1,7 +1,7 @@
 package service
 
 import (
-	"go-tutorial/rest-api/entity"
+	"github.com/davidch93/go-tutorial/rest-api/entity"
 )
 
 var people []entity.Person
